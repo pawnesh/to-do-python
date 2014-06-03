@@ -194,7 +194,10 @@ if __name__ == "__main__":
     todo.retriveTasks()
 
     argument = sys.argv[1:]
-    if(argument[0] in ("--add","-a")):
+    if(len(argument) < 1):
+        help()
+
+    elif(argument[0] in ("--add","-a")):
         # below if statement is for checking task name
         # containg more than one word
         if(len(argument) > 4):
