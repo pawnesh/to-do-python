@@ -180,7 +180,7 @@ class Task:
 
 
 def help():
-     print('--add <task name in comma> <end_time> <priority>')
+     print('--add <task name> <end_time> <priority>')
      print('--setstatus <task_id> <status>')
      print('--view or -v for listing tasks')
      print('--remove <task_id> or -r for removing task')
